@@ -1,0 +1,11 @@
+#game_field {
+    height: 400px;
+    background-color: lightgrey;
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    position: absolute;
+    background-color: red;
+}

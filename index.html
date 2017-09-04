@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href=" /css.css">
+    <link rel="javascript" type="text/javascript" href=" /js.css">
+    <meta charset="UTF-8">
+    <audio src="/t.mp3" autoplay="autoplay"></audio>
+    <title>KUBIKI GAME</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Игра<audio controls>
+                <source  src="t.mp3" type='audio/mp4' />
+                <p>Play Music</p>
+            </audio> </h1>
+            <div class="row">
+                <div class="col-xs-4">
+                    <button type="button" class="btn btn-default" id="new" onclick="soundClick()">New game</button>
+                    <button type="button" class="btn btn-default" id="start_stop" style="display:none">Start</button>
+                </div>
+                <div class="col-xs-4">
+                    <div class="input-group">
+                        <div class="input-group-addon">Points: </div>
+                        <input type="text" class="form-control" id="points" value="0" readonly>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="input-group">
+                        <div class="input-group-addon">Time left: </div>
+                        <input type="text" class="form-control" id="time" value="0" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="col-xs-10" id="game_field" style="">
+
+        </div>
+        <div class="col-xs-2">
+            <table class="table table-stripped">
+                <caption>Points</caption>
+                <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Points</td>
+                </tr>
+                </thead>
+                <tbody id="results_tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="results_modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Game over!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Your points: <span id="points_result">0</span></p>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name_input" class="col-xs-4 control-label">Your name</label>
+                        <div class="col-xs-8">
+                            <input type="email" class="form-control" id="name_input" placeholder="Email">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="save_button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+</body>
+</html>
