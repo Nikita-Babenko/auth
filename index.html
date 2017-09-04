@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" href=" /css.css">
-    <link rel="javascript" type="text/javascript" href=" /js.css">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
     <meta charset="UTF-8">
-    <audio src="/t.mp3" autoplay="autoplay"></audio>
+
     <title>KUBIKI GAME</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Игра<audio controls>
-                <source  src="t.mp3" type='audio/mp4' />
-                <p>Play Music</p>
-            </audio> </h1>
+            <h1>Игра</h1>
             <div class="row">
                 <div class="col-xs-4">
-                    <button type="button" class="btn btn-default" id="new" onclick="soundClick()">New game</button>
+                    <button type="button" class="btn btn-default" id="new">New game</button>
                     <button type="button" class="btn btn-default" id="start_stop" style="display:none">Start</button>
                 </div>
                 <div class="col-xs-4">
@@ -73,7 +70,7 @@
                     <div class="form-group">
                         <label for="name_input" class="col-xs-4 control-label">Your name</label>
                         <div class="col-xs-8">
-                            <input type="email" class="form-control" id="name_input" placeholder="Email">
+                            <input type="Введите имя игрока" class="form-control" id="name_input" placeholder="Email">
                         </div>
                     </div>
                 </form>
@@ -87,5 +84,9 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+<audio controls>
+    <source  src="t.mp3" type='audio/mp4' />
+    <p>Play Music</p>
+</audio>
 </body>
 </html>
