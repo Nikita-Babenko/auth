@@ -1,7 +1,5 @@
 #game_field {
     height: 400px;
-    border: #db2df0 ;
-    border-radius: 2px;
     background-color: lightgrey;
     position: relative;
     overflow: hidden;
