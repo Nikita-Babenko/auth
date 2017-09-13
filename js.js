@@ -14,7 +14,7 @@ $(function() {
 
     function newGame() {
         $field.html('');
-        createBlocks(randomInt(1, 2));
+        createBlocks(randomInt(1,3));
         setTimeLeft(60);
         setPoints(0);
         $startStopButton.show();
@@ -79,7 +79,7 @@ $(function() {
 
         setPoints(points + 1);
         $(this).remove();
-        createBlocks(randomInt(0, 2));
+        createBlocks(randomInt(0, 3));
     }
 
     function randomInt(max, min) {
