@@ -109,3 +109,20 @@ $(function() {
         }
     })
 });
+
+
+window.onload = function () {
+    console.log('works');
+     document.getElementById("send").onclick = function () {
+         var xhr = new XMLHttpRequest();
+         var body = JSON.stringify({"name":"Nikita","pts":"200"});
+         xhr.open("GET","/results");
+         xhr.open("POST","/");
+         xhr.setRequestHeader('Content-Type','application/json');
+         xhr.onreadystatechange = function () {
+             if (this.readyState !=4)return;
+             console.log(this.responseText);
+         };
+         xhr.send(body);
+     };
+};
